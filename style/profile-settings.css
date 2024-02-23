@@ -9,14 +9,15 @@ nav {
 }
 .profilePic {
   position: relative;
+  width: 130px;
+  height: 130px;
 }
 .profilePic .bi-pen {
-  background-color: black;
   position: absolute;
   bottom: 0;
   left: 0;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
+  margin-bottom: 0.8rem;
+  margin-left: 0.8rem;
 }
 p {
   margin-bottom: 0;
