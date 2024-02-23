@@ -8,6 +8,10 @@
   height: 30px;
 }
 
+.dropdown button {
+  font-size: 12px;
+}
+
 h3 {
   margin-top: 1.5rem;
 }
@@ -31,4 +35,7 @@ footer {
 
 .service {
   font-size: 13px;
+}
+.footer-text a {
+  color: #dee2e6;
 }

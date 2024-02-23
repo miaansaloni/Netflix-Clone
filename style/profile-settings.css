@@ -1,0 +1,23 @@
+.navbar-brand img {
+  height: 50px;
+}
+nav {
+  background: linear-gradient(0deg, rgba(36, 35, 38, 0.7783905798647583) 0%, rgba(0, 0, 0, 0.6047211120776436) 94%);
+}
+.container {
+  max-width: 600px;
+}
+.profilePic {
+  position: relative;
+}
+.profilePic .bi-pen {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+p {
+  margin-bottom: 0;
+}
