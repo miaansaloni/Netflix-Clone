@@ -12,6 +12,9 @@
 .dropdown button {
   font-size: 12px;
 }
+.navbar-toggler:focus {
+  border: none;
+}
 
 h3 {
   margin-top: 1.5rem;
@@ -34,9 +37,34 @@ footer {
   margin-top: 1rem;
 }
 
-.service {
+.serviceBTN {
   font-size: 13px;
 }
 .footer-text a {
   color: #dee2e6;
+}
+
+@media (max-width: 991px) {
+  main {
+    margin-inline: 10px;
+  }
+  #tv-shows {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .navbar {
+    margin-bottom: 1rem;
+    margin-inline: 10px;
+  }
+  .bell {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    margin-inline: 20px;
+  }
 }

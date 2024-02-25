@@ -16,7 +16,7 @@
   <body>
     <!--NAVBAR-->
 
-    <nav class="navbar navbar-expand-lg mx-5">
+    <nav class="navbar navbar-expand-lg">
       <div class="navbar-brand" href="#">
         <img src="./style/netflix_logo.png" alt="" class="img-fluid" />
       </div>
@@ -31,7 +31,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse bg-dark z-1" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -75,7 +75,7 @@
           </form>
 
           <li class="nav-item">
-            <div class="nav-link active" aria-current="page">
+            <div class="bell nav-link active" aria-current="page">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -133,62 +133,61 @@
     </nav>
 
     <!--GENRES-->
+    <main>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <h2 id="tv-shows">TV Shows</h2>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle border-secondary bg-black rounded-0 py-1 m-3"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Genres
+            </button>
+            <ul class="dropdown-menu border-secondary bg-black rounded-0 py-1" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Fantasy</a></li>
+              <li><a class="dropdown-item" href="#">Reality</a></li>
+              <li><a class="dropdown-item" href="#">Documentary</a></li>
+            </ul>
+          </div>
+        </div>
 
-    <div class="d-flex justify-content-between mx-5">
-      <div class="d-flex align-items-center">
-        <h2 id="tv-shows">TV Shows</h2>
-        <div class="dropdown">
-          <button
-            class="btn dropdown-toggle border-secondary bg-black rounded-0 py-1 m-3"
-            type="button"
-            id="dropdownMenuButton1"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Genres
+        <div class="display d-flex align-items-center">
+          <button class="btn border-secondary bg-black rounded-0 pt-0">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
           </button>
-          <ul class="dropdown-menu border-secondary bg-black rounded-0 py-1" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Fantasy</a></li>
-            <li><a class="dropdown-item" href="#">Reality</a></li>
-            <li><a class="dropdown-item" href="#">Documentary</a></li>
-          </ul>
+          <button class="btn border-secondary bg-black rounded-0 pt-0">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-grid"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
 
-      <div class="display d-flex align-items-center">
-        <button class="btn border-secondary bg-black rounded-0 pt-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-list"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-            />
-          </svg>
-        </button>
-        <button class="btn border-secondary bg-black rounded-0 pt-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-grid"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <main class="mx-5">
       <!--TRENDING NOW-->
       <div class="container-fluid">
         <h3>Trending Now</h3>
@@ -262,14 +261,39 @@
           </div>
         </div>
       </div>
+
+      <!--MY LIST-->
+      <div class="container-fluid">
+        <h3>My List</h3>
+        <div class="row g-1">
+          <div class="col-6 col-s-6 col-md-4 col-lg-2 col-xl-2">
+            <img src="./style/media/media18.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-6 col-s-6 col-md-4 col-lg-2 col-xl-2">
+            <img src="./style/media/media19.webp" alt="" class="img-fluid" />
+          </div>
+          <div class="col-6 col-s-6 col-md-4 col-lg-2 col-xl-2">
+            <img src="./style/media/media20.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-6 col-s-6 col-md-4 col-lg-2 col-xl-2">
+            <img src="./style/media/media21.webp" alt="" class="img-fluid" />
+          </div>
+          <div class="col-6 col-s-6 col-md-4 col-lg-2 col-xl-2">
+            <img src="./style/media/media22.webp" alt="" class="img-fluid" />
+          </div>
+          <div class="col-6 col-s-6 col-md-4 col-lg-2 col-xl-2">
+            <img src="./style/media/media23.webp" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
     </main>
 
     <!--FOOTER-->
 
-    <footer class="d-flex justify-content-center">
+    <footer>
       <div class="container-lg">
-        <div class="row">
-          <div class="col-lg-3 offset-lg-2 px-1">
+        <div>
+          <div class="offset-lg-2">
             <!--FACEBOOK-->
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -283,7 +307,7 @@
                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
               />
             </svg>
-            <!--INSTA-->
+            <!--INSTAGRAM-->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -325,36 +349,39 @@
             </svg>
           </div>
         </div>
+      </div>
+      <!--///////////////////////////////-->
+      <div class="container-lg">
         <div class="row g-1 d-flex justify-content-center">
-          <div class="col-2 footer-text lh-1">
+          <div class="col-6 col-md-2 footer-text lh-1">
             <p><a href="" class="text-decoration-none">Audio and subtitles</a></p>
             <p><a href="" class="text-decoration-none">Media Center</a></p>
             <p><a href="" class="text-decoration-none">Privacy</a></p>
             <p><a href="" class="text-decoration-none">Contact Us</a></p>
           </div>
-          <div class="col-2 footer-text lh-1">
+          <div class="col-6 col-md-2 footer-text lh-1">
             <p><a href="" class="text-decoration-none">Audio Description</a></p>
             <p><a href="" class="text-decoration-none">Investor Relations</a></p>
             <p><a href="" class="text-decoration-none">Legal Notices</a></p>
           </div>
-          <div class="col-2 footer-text lh-1">
+          <div class="col-6 col-md-2 footer-text lh-1">
             <p><a href="" class="text-decoration-none">Help Center</a></p>
             <p><a href="" class="text-decoration-none">Jobs</a></p>
             <p><a href="" class="text-decoration-none">Cookie Preferences</a></p>
           </div>
-          <div class="col-2 footer-text lh-1">
+          <div class="col-6 col-md-2 footer-text lh-1">
             <p><a href="" class="text-decoration-none">Gift Cards</a></p>
             <p><a href="" class="text-decoration-none">Terms of Use</a></p>
             <p><a href="" class="text-decoration-none">Corporate Infornation</a></p>
           </div>
         </div>
         <div class="row">
-          <div class="col-2 offset-lg-2 px-1">
-            <button class="service btn btn-outline-secondary border-2 rounded-0">Service Code</button>
+          <div class="col-4 offset-lg-2 px-1 service-code">
+            <button class="serviceBTN btn btn-outline-secondary border-2 rounded-0">Service Code</button>
           </div>
         </div>
         <div class="row">
-          <div class="col-4 offset-lg-2 px-1">
+          <div class="col-8 offset-lg-2 px-1">
             <p class="copyright">&#169; 1997-2019 Netflix,inc. {i-0d00fcda2fdf9c0de}</p>
           </div>
         </div>
