@@ -1,24 +1,22 @@
 .navbar {
   height: 50px;
 }
-
 .navbar-brand img {
   height: 50px;
 }
 .dropdown-toggle img {
   height: 30px;
 }
-
 .dropdown button {
   font-size: 12px;
 }
 .navbar-toggler:focus {
   border: none;
 }
-
 h3 {
   margin-top: 1.5rem;
 }
+
 .container-fluid {
   padding-inline: 0;
 }
