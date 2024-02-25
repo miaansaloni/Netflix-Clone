@@ -4,22 +4,35 @@
 .navbar-brand img {
   height: 50px;
 }
+form input {
+  height: 30px;
+}
 .dropdown-toggle img {
   height: 30px;
 }
 .dropdown button {
   font-size: 12px;
 }
-.navbar-toggler:focus {
-  border: none;
-}
 h3 {
   margin-top: 1.5rem;
 }
-
 .container-fluid {
   padding-inline: 0;
 }
+
+.img-fluid {
+  transition: all 0.2s ease-in-out;
+}
+
+.img-fluid:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 2px 8px 2px rgba(0, 0, 0, 0.48);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
 footer {
   margin-top: 6rem;
 }
